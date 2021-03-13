@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Access Google Maps API</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+	<style type="text/css">
+		#map {
+			width: 100%;
+			height: 450px;
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center text-danger">Access Google Maps API</h1><br>
+		<div id="map"></div>
+		<br>
+		<div class="row">
+			<div class="col-md-6"><input type="text" class="form-control" id="lat"></div>
+			<div class="col-md-6"><input type="text" class="form-control" id="lng"></div>
+		</div>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/googlemap.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKrULIip5xWYjsplPu8P-Bi-sRiPOkCGQ&callback=loadMap">
+</script>
+</html>
